@@ -1,0 +1,212 @@
+/* ===== 1. Reset & Box-sizing ===== */
+* {
+    box-sizing: border-box; /* Inclut padding/border dans la largeur [cite: 106] */
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== 2. Palette Panafricaine ===== */
+:root {
+    --vert: #0E8A4F;
+    --jaune: #F5C518;
+    --rouge: #C8332E;
+    --noir: #1A1A1A;
+    --blanc-casse: #F8F8F8;
+}
+
+/* ===== 3. Base du document ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--noir);
+    background-color: var(--blanc-casse);
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+/* ===== 4. Header ===== */
+header {
+    background-color: var(--vert);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* ===== 5. Navigation Flexbox ===== */
+nav {
+    background-color: var(--jaune);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Pour le mobile plus tard [cite: 212] */
+}
+
+nav a {
+    color: var(--noir);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 15px 25px;
+    transition: background-color 0.2s; /* Effet fluide [cite: 219] */
+}
+
+nav a:hover {
+    background-color: var(--vert);
+    color: white;
+}
+.modes-grille {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+}
+
+.carte-mode {
+    flex: 1 1 200px; /* Largeur flexible [cite: 305] */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carte-jaune { background-color: var(--jaune); }
+.carte-rouge { background-color: var(--rouge); color: white; }
+.carte-vert { background-color: var(--vert); color: white; } 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: var(--vert);
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Sélectionne les lignes paires pour la couleur jaune clair [cite: 326] */
+tr:nth-child(even) td {
+    background-color: rgba(245, 197, 24, 0.08);
+}
+/* ===== Section principale ===== */
+main {
+max-width: 1100px;
+margin: 30px auto;
+padding: 0 20px;
+}
+main section {
+margin-bottom: 40px;
+}
+main h2 {
+color: var(--vert);
+border-bottom: 3px solid var(--jaune);
+padding-bottom: 8px;
+margin-bottom: 20px;
+}
+/* ===== Grille de cartes (Flexbox) ===== */
+.modes-grille {
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+}
+.carte-mode {
+flex: 1 1 200px;
+padding: 20px;
+border-radius: 8px;
+color: var(--noir);
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.carte-mode h3 {
+margin-bottom: 8px;
+}
+.carte-jaune { background-color: var(--jaune); }
+.carte-rouge { background-color: var(--rouge); color: white; }
+.carte-vert
+{ background-color: var(--vert); color: white; }
+/* ===== Boutons ===== */
+.btn {
+display: inline-block;
+padding: 12px 28px;
+font-size: 1rem;
+font-weight: 600;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+text-decoration: none;
+transition: background-color 0.2s, transform 0.1s;
+}
+.btn-primary {
+background-color: var(--vert);
+color: white;
+}
+.btn-primary:hover {
+background-color: #0a6e3f; /* vert plus foncé */
+}
+.btn-primary:active {
+transform: scale(0.97);
+}
+.btn-secondary {
+background-color: var(--blanc-casse);
+color: var(--noir);
+border: 2px solid var(--noir);
+}
+.btn-secondary:hover {
+background-color: var(--noir);
+color: white;
+}
+/* ===== Footer ===== */
+footer {
+background-color: var(--noir);
+color: var(--blanc-casse);
+padding: 25px 20px;
+text-align: center;
+margin-top: 50px;
+font-size: 0.9rem;
+}
+footer a {
+    color: var(--jaune);
+text-decoration: underline;
+}
+footer a:hover {
+color: white;
+}
+/* ===== Section principale ===== */
+main {
+max-width: 1100px;
+margin: 30px auto;
+padding: 0 20px;
+}
+main section {
+margin-bottom: 40px;
+}
+main h2 {
+color: var(--vert);
+border-bottom: 3px solid var(--jaune);
+padding-bottom: 8px;
+margin-bottom: 20px;
+}
+/* ===== Grille de cartes (Flexbox) ===== */
+.modes-grille {
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+}
+.carte-mode {
+flex: 1 1 200px;
+padding: 20px;
+border-radius: 8px;
+color: var(--noir);
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.carte-mode h3 {
+margin-bottom: 8px;
+}
+.carte-jaune { background-color: var(--jaune); }
+.carte-rouge { background-color: var(--rouge); color: white; }
+.carte-vert
+{ background-color: var(--vert); color: white; }
