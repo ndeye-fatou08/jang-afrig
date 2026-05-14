@@ -193,7 +193,7 @@ margin-bottom: 20px;
 /* ===== Grille de cartes (Flexbox) ===== */
 .modes-grille {
 display: flex;
-flex-wrap: wrap;
+flex-wrap: nowrap;
 gap: 15px;
 }
 .carte-mode {
@@ -208,5 +208,4 @@ margin-bottom: 8px;
 }
 .carte-jaune { background-color: var(--jaune); }
 .carte-rouge { background-color: var(--rouge); color: white; }
-.carte-vert
-{ background-color: var(--vert); color: white; }
+.carte-vert  { background-color: var(--vert); color: white; }  
